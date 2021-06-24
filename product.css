@@ -1,0 +1,229 @@
+.muvi_body {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0 auto;
+}
+
+.main_header {
+    font-family: proxima-nova, sans-serif;
+    font-weight: 900;
+
+    font-style: normal;
+}
+
+.relative {
+    position: relative;
+}
+
+.muvi_section {
+    padding: 5px 15px;
+}
+
+.absolute_p {
+    top: 20px;
+    color: white;
+    left: 65%;
+    position: absolute;
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+    line-height: 1.35;
+    letter-spacing: 0.7px;
+    font-family: proxima-nova, sans-serif;
+    font-weight: 900;
+
+    font-style: normal;
+}
+
+.section_description {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.section_description p {
+    width: 100%;
+    align-self: center;
+}
+
+.image_what {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right_image {
+    width: 60%;
+    border-radius: 50%;
+}
+
+.an_image {
+    width: 120px;
+    height: 120px;
+    background-color: rgba(128, 128, 128, 0.308);
+    border-radius: 50%;
+}
+
+.the_benefits {
+    padding: 30px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.the_benefit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #cccccc3b;
+    background-color: none;
+  }
+  
+  /* Style the buttons that are used to open the tab content */
+  .tab button {
+    background-color: rgba(240, 240, 240, 0.603);
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 8px 10px;
+    border: 1px solid rgba(219, 219, 219, 0.521);
+    border-radius: 50px;
+    padding:10px 8px;
+    transition: 0.3s;
+    font-family: 'Ubuntu', sans-serif;
+    box-shadow: 2px 3px 9px 1px #00000018;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: rgb(236, 236, 236);
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #e31837;
+    color: white;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    width: 100%;
+  }
+
+  .tabcontent {
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .tabcontent img {
+        width: 70%;
+  }
+
+  .tab_info {
+      width: 100%;
+      display: flex!important;
+      flex-direction: column;
+  }
+  .tab_info p {
+    padding: 5px 40px 5px 20px;
+    text-align: justify;
+  }
+  
+  /* Go from zero to full opacity */
+  @keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+  .ingredientes_container {
+      display: flex;
+      flex-direction: column;
+      padding: 20px 0px;
+      width: 100%;
+  }
+
+  .the_benefit {
+      margin-bottom: 20px;
+  }
+
+  .the_benefit_text {
+      padding: 0px 60px;
+  }
+
+@media (min-width: 40em){
+    .section_description {
+        flex-direction: row;
+    }
+    .section_description p {
+        width: 50%;
+        font-size: 18px;
+        padding-right: 50px;
+        text-align: justify;
+    }
+    .image_what {
+        width: 50%;
+    }
+    .right_image {
+        width: 50%;
+    }
+    .the_benefits {
+        flex-direction: row;
+    }
+    .the_benefit {
+        width: 50%;
+        margin: 0;
+    }
+    .tab {
+        display: flex;
+        flex-direction: column;
+      }
+      .ingredientes_container {
+        flex-direction: row;
+    }
+    .tabcontent {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+      }
+      .tabcontent img {
+        width: 40%;
+  }
+  .tab button {
+    font-size: 16px;
+  }
+      .tab_info {
+        width: 60%;
+    }
+    .the_benefit {
+        padding: 0px 20px;
+    }
+    .the_benefit_text {
+        padding: 0;
+    }
+    .muvi_section {
+        padding: 5px 40px;
+    }
+    
+}
+
+@media (min-width: 64em){
+    .the_benefit {
+        width: 25%;
+    }
+}
