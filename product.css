@@ -1,6 +1,7 @@
 .muvi_body {
     font-family: 'Ubuntu', sans-serif;
     margin: 0 auto;
+    overflow-y: hidden;
 }
 
 .main_header {
@@ -84,7 +85,6 @@
 /* Style the tab */
 .tab {
     overflow: hidden;
-    border: 1px solid #cccccc3b;
     background-color: none;
   }
   
